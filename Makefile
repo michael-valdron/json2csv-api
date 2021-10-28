@@ -8,7 +8,7 @@ runserver:
 	$(CMD) run
 
 tests:
-	pytest -v
+	pytest -v -s
 
 repl:
 	python
