@@ -1,6 +1,6 @@
 from flask import Flask, json
 from flask.wrappers import Response
-from . import views
+from . import views, handlers
 
 def create_app(test_config=None) -> Flask:
     app = Flask(__name__, instance_relative_config=True)
@@ -15,6 +15,7 @@ def create_app(test_config=None) -> Flask:
 
     # register blueprints
     app.register_blueprint(views.bp)
+    app.register_blueprint(handlers.bp)
 
     # index route
     @app.route('/', methods=['GET'])
