@@ -1,0 +1,15 @@
+attrs==21.2.0
+click==8.0.3
+flask==2.0.2
+iniconfig==1.1.1
+itsdangerous==2.0.1
+jinja2==3.0.2
+markupsafe==2.0.1
+packaging==21.0
+pluggy==1.0.0
+py==1.10.0
+pyparsing==3.0.3
+pytest==6.2.5
+python-dotenv==0.19.1
+toml==0.10.2
+werkzeug==2.0.2
