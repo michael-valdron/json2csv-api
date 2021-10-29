@@ -1,1 +1,1 @@
-web: gunicorn wsgi:json2csv_api
+web: gunicorn wsgi
