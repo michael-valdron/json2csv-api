@@ -1,12 +1,15 @@
 from typing import Generator
 from flask.testing import FlaskClient
+from dotenv import load_dotenv
 import pytest
 import json
 
 from json2csv_api import create_app
 
+
 @pytest.fixture
 def client() -> Generator[FlaskClient, None, None]:
+    load_dotenv()
     app = create_app({'TESTING': True})
 
     with app.test_client() as client:
